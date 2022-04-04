@@ -1,0 +1,219 @@
+  body {
+    background-color: #fff;
+    color: rgb(34, 34, 34);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    max-width: 28rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 17px;
+  }
+  
+  main {
+    padding: 2rem;
+    line-height: 1.4;
+  }
+
+  .profil {
+  width: 160px;
+  border-radius: 100%;
+  }
+  
+  h1 {
+    margin-bottom: 2.7rem;
+  }
+  
+  h2 {
+    margin-top: 2.7rem;
+    margin-bottom: 2.7rem;
+    font-size: 1.4em;
+  }
+  
+  h3 {
+    margin-bottom: .33rem;
+    color: #0007;
+    font-size: .6rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+  }
+  
+  a {
+    color: #06e;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+  
+  .links div p {
+    display: flex;
+    align-items: center;
+    margin: .2rem 0 0 .25rem;
+    font-size: .9rem;
+    letter-spacing: .025rem;
+  }
+  
+  .links div p img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .33rem;
+  }
+  
+  .title {
+  font-size: 17px;
+  color: rgb(34 34 34);
+  text-align: left
+  }
+  
+  .todo {
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2rem 2rem 1rem;
+  background: #f9f1da;
+;
+  border-radius: 1rem
+  }
+  
+  .todo li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  background: hsla(0, 0%, 100%, .95);
+  -webkit-box-shadow: 0 2px 5px rgba(249, 241, 218, .18);
+  box-shadow: 0 2px 5px rgba(249, 241, 218, .18);
+  list-style: none
+  }
+  
+  .todo li.done span {
+  text-decoration: line-through;
+  color: rgba(0, 16, 36, .4)
+  }
+  
+  .todo li.wip span {
+  color: #000
+  }
+  
+  .inner-todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2rem 2rem 1rem;
+  background: #f9f1da;
+  border-radius: 1rem
+  }
+  
+  .inner-todo li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(249, 241, 218, .18);
+  box-shadow: 0 2px 5px rgba(249, 241, 218, .18);
+  list-style: none;
+  transition: all .2s ease-in-out;
+  }
+
+  .inner-todo a:hover {
+  text-decoration: none;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .inner-todo li:hover {
+  background: #c0f7f1;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  }
+  
+/*  .inner-todo li.done span {
+  text-decoration: line-through;
+  color: rgba(0, 16, 36, .4)
+  }
+*/
+  
+  .inner-todo li.wip span {
+  color: #000
+  }
+  
+  .description {
+  color: #f0f2f4;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 40px
+  }  
+
+.portfolio-div {
+  margin-block-start: 0.67em;
+  padding: 2rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  background: #f9f1da;
+  -webkit-box-shadow: 0 2px 5px rgba(249, 241, 218, .18);
+  box-shadow: 0 2px 5px rgba(249, 241, 218, .18);
+  list-style: none;
+  text-align: center;
+  width: 15rem;
+}
+
+.example {
+  width: 15rem;
+  height: 8.5rem;
+  border-radius: 0.5rem;
+  /*border: 2px solid #ffffff;*/
+  transition: .3s ease-in-out;
+  object-fit: cover;
+}
+
+.div-image {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.image-overlay {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,.4);
+  backdrop-filter: blur(4px);
+  transition: .3s;
+}
+
+.div-image:hover .image-overlay {
+  bottom: 0;
+}
